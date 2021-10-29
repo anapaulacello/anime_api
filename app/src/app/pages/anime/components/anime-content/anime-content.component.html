@@ -1,3 +1,25 @@
+<div class="container m-5">
+    <form [formGroup]="animeForm" novalidate (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">studio</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="studio">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">url image</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="poster">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">year</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="year">
+        </div>
+    
+        <button type="submit" class="btn btn-primary" [disabled]="!animeForm.valid">Submit</button>
+      </form>   
+</div>
 
 <div>
     <li *ngFor="let element of animeList">

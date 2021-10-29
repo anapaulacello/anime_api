@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AnimeRoutingModule } from './anime-routing.module';
 import { AnimeContentComponent } from './components/anime-content/anime-content.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AnimeContentComponent } from './components/anime-content/anime-content.
   ],
   imports: [
     CommonModule,
-    AnimeRoutingModule
+    AnimeRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class AnimeModule { }

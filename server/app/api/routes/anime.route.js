@@ -5,7 +5,7 @@ const { isAuth } = require("../../../middlewares/auth.middleware");
 
 const{getAnimeById,getAllAnime,createAnime}=require("../controllers/anime.controller");
 
-router.post("/create",[isAuth], createAnime);
+router.post("/create", createAnime);
 router.get("/", getAllAnime);
 router.get("/:animeId",[isAuth], getAnimeById);
 
