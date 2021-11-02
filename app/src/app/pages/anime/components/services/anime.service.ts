@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AnimeService{
-  public URL:string="http://localhost:3000/";
+  public URL:string="https://api-rest-anime.vercel.app/";
   public animeURL:string=`${this.URL}anime`;
   public createURL:string=`${this.animeURL}/create`;
 
