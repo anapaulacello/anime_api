@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class AnimeService{
   public URL:string="http://localhost:3000/";
   public animeURL:string=`${this.URL}anime`;
-  public createURL:string=`${this.animeURL}/create`
+  public createURL:string=`${this.animeURL}/create`;
 
   constructor(private httpClient:HttpClient) { }
 
